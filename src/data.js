@@ -8,7 +8,7 @@ export const profile = {
   initials: 'MRK',
   role: 'A web developer based in Lapu-Lapu City, Cebu, Philippines',
   intro:
-    'I have 5+ years of experience, growing from front-end specialist into full-stack. I ship platform features, turn designs into pixel-perfect interfaces, and use AI-assisted, spec-driven workflows to build faster and cleaner.',
+  'Web developer with 5+ years of experience across WordPress, CakePHP and Laravel. I started in front-end, turning designs into fast, responsive, SEO-friendly pages, and have grown into full-stack, updating existing backend APIs and delivering features end to end. I use AI-assisted, spec-driven workflows to plan, build and review code.',
   email: 'markricksonplateros09@gmail.com',
   links: [
     { label: 'GitHub', href: 'https://github.com/ricksonz' },
@@ -46,6 +46,7 @@ export const experience = [
   },
   {
     company: 'Proweaver Inc.',
+    highlight: 'WordPress',
     period: 'Jun 2021 – Feb 2023',
     status: 'Previous',
     summary: 'Developed and maintained custom, responsive WordPress websites tailored to diverse client specifications from design prototypes.',
@@ -75,28 +76,33 @@ export const experience = [
 export const skills = [
   { group: 'Languages', items: ['HTML', 'CSS', 'Sass', 'JavaScript', 'TypeScript', 'PHP', 'MySQL'] },
   {
-    group: 'Frameworks',
+    group: 'Frameworks & CMS',
     items: ['React', 'Vue', 'Node.js', 'Laravel', 'CakePHP', 'WordPress', 'Shopify', 'jQuery', 'Tailwind CSS', 'Bootstrap'],
   },
   {
-    group: 'AI workflow',
-    items: ['Cursor', 'Spec-driven development', 'Prompt engineering', 'LLMs'],
+    group: 'Tools',
+    items: ['Git', 'GitHub', 'Jira', 'Figma', 'Adobe XD', 'Lighthouse', 'FileZilla', 'Cursor', 'Playwright', 'VS Code'],
   },
   {
-    group: 'Engineering',
-    items: ['REST APIs', 'Responsive design', 'Technical SEO', 'Core Web Vitals'],
+    group: 'Practices',
+    items: [
+      'AI-assisted development',
+      'Spec-driven development',
+      'AI-assisted unit tests',
+      'REST APIs',
+      'Responsive design',
+      'Technical SEO',
+      'Core Web Vitals',
+      'Cross-browser testing',
+    ],
   },
-  {
-    group: 'Testing',
-    items: ['AI-assisted unit tests', 'Manual test cases', 'Playwright', 'Cross-browser testing'],
-  },
-  { group: 'Tools', items: ['Git', 'GitHub', 'Jira', 'Figma', 'Adobe XD', 'Lighthouse', 'FileZilla'] },
 ]
 
 export const education = {
   degree: 'BS in Information Technology',
   school: 'University of Cebu Lapu-Lapu and Mandaue',
-  period: '2015 – 2020 (Graduated)',
+  period: '2015 – 2020',
+  status: 'Graduated',
 }
 
 export const projects = [
@@ -108,4 +114,10 @@ export const projects = [
     href: '#', // live site URL
     github: 'https://github.com/your-username/project-name',
   }
+]
+
+// Skills with real-world production experience (shown with a gold border)
+export const realWorldSkills = [
+  'HTML', 'CSS', 'JavaScript', 'jQuery', 'PHP', 'WordPress', 'CakePHP', 'Laravel', 'MySQL', 'Node.js',
+  'Git', 'GitHub', 'Jira', 'Figma', 'Adobe XD', 'Lighthouse', 'FileZilla', 'Cursor', 'Playwright', 'VS Code', 'Tailwind CSS', 'Bootstrap'
 ]

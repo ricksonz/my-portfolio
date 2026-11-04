@@ -1,7 +1,8 @@
-import { useState } from 'react'
-import Section from './Section'
-import { experience, education } from '../data'
-import { ArrowUpRightIcon } from './Icons'
+import { useState } from 'react';
+import Section from './Section';
+import { experience, education } from '../data';
+import { ArrowUpRightIcon } from './Icons';
+import Highlight from './Highlight';
 
 function Badge({ children, current }) {
   return (
@@ -51,7 +52,9 @@ function AccordionItem({ job, id, open, onToggle }) {
           </svg>
         </button>
       </h3>
-      <p className="-mt-2 pb-5 leading-relaxed">{job.summary}</p>
+      <p className="-mt-2 pb-5 leading-relaxed">
+        <Highlight text={job.summary} phrase={job.highlight} />
+      </p>
       {/* grid-rows trick animates height from 0 to auto */}
       <div
         id={`${id}-panel`}
@@ -68,13 +71,13 @@ function AccordionItem({ job, id, open, onToggle }) {
                 <div key={role.title}>
                   <div className="flex flex-wrap items-baseline justify-between gap-x-4">
                     <h4 className="font-semibold text-zinc-900 dark:text-zinc-50">{role.title}</h4>
-                    <span className="text-sm">{role.period}</span>
+                    {job.roles.length > 1 && <span className="text-sm">{role.period}</span>}
                   </div>
                   <ul className="mt-3 list-disc space-y-2 pl-5 marker:text-zinc-400 dark:marker:text-zinc-600">
                     {role.points.map((point) => (
-                      <li key={point} className="leading-relaxed">
-                        {point}
-                      </li>
+                    <li key={point} className="leading-relaxed">
+                      <Highlight text={point} phrase={job.highlight} />
+                    </li>
                     ))}
                   </ul>
                 </div>
@@ -141,7 +144,10 @@ export default function Experience() {
       </ul>
 
       <div className="mt-12">
-        <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-50">{education.degree}</h3>
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+          <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-50">{education.degree}</h3>
+          <Badge current>{education.status}</Badge>
+        </div>
         <p className="mt-1 text-sm">
           {education.school}, {education.period}
         </p>
