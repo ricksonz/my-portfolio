@@ -8,7 +8,7 @@ export const profile = {
   initials: 'MRK',
   role: 'A web developer based in Lapu-Lapu City, Cebu, Philippines',
   intro:
-  'Web developer with 5+ years of experience across WordPress, CakePHP and Laravel. I started in front-end, turning designs into fast, responsive, SEO-friendly pages, and have grown into full-stack, updating existing backend APIs and delivering features end to end. I use AI-assisted, spec-driven workflows to plan, build and review code.',
+  'Web Developer with 5+ years of experience building responsive web applications and delivering end-to-end features. Experienced in front-end and back-end development, API integration, and AI-assisted, spec-driven workflows for efficient software development.',
   email: 'markricksonplateros09@gmail.com',
   links: [
     { label: 'GitHub', href: 'https://github.com/ricksonz' },
@@ -22,20 +22,21 @@ export const experience = [
     period: 'Feb 2023 – Nov 2026',
     status: 'Recent',
     summary:
-      'Maintain NativeCamp project, an online multi-platform English-teaching service',
+      'Maintained NativeCamp, a multi-platform online English-teaching service.',
     roles: [
       {
-        title: 'AI-Assisted Web Developer',
-        period: 'Aug 2026 – Nov 2026',
+        title: 'Web Developer (Full-Stack)',
+        period: '5mos.',
         points: [
-          'Maintained backend APIs with AI assistance and deliver features end to end.',
-          'Helped migrate front-end pages from legacy CakePHP 2 to Laravel 12 Blade templates using AI-assisted workflows.',
-          'Plan, generate, and review code using structured specs and tailored prompts across VS Code, GitHub Copilot, and Claude.',
+          'Deliver feature tickets across the front end and backend code of the CakePHP codebase, using AI assistance.',
+          'Contribute to the ongoing migration of front-end pages from legacy CakePHP 2 to Laravel 12 Blade templates using AI-assisted workflows.',
+          'Plan, generate, and review code with structured specs and tailored prompts across Claude and other AI models, working in Cursor and VS Code.',
+          'Write AI-assisted unit tests and Playwright tests, plus manual test cases, to verify features before release.'
         ],
       },
       {
-        title: 'Front-End Developer',
-        period: 'Feb 2023 – Jul 2026',
+        title: 'Front End Developer',
+        period: '3yrs. & 4mos.',
         points: [
           'Built and maintained front-end pages on the legacy CakePHP 2 codebase.',
           'Translated Figma and Adobe XD designs into responsive, pixel-perfect pages.',
@@ -47,18 +48,18 @@ export const experience = [
   {
     company: 'Proweaver Inc.',
     highlight: 'WordPress',
-    period: 'Jun 2021 – Feb 2023',
+    period: 'June 2021 – Feb 2023',
     status: 'Previous',
     summary: 'Developed and maintained custom, responsive WordPress websites tailored to diverse client specifications from design prototypes.',
     roles: [
       {
-        title: 'Front-End Developer',
-        period: 'Jun 2021 – Feb 2023',
+        title: 'Front End Developer',
+        period: 'June 2021 – Feb 2023',
         points: [
-          'Translated high-fidelity Xara design files into pixel-perfect, responsive WordPress themes using standard builders like Divi and Elementor alongside custom CSS/HTML.',
+          'On the maintenance team, customized WordPress themes and modified Divi and Elementor pages on released and in-development client sites, covering multiple B2B industries such as home care, logistics, consulting, staffing, and real estate.',
           'Interpreted complex client requirements to implement accurate functional revisions and custom features under tight production deadlines.',
-          'Diagnosed and resolved cross-browser compatibility bugs and layout inconsistencies to ensure seamless multi-device user experiences.',
-          'Optimized website performance to improve Google Lighthouse core web vitals and engineered semantic markup to ensure successful indexing on Google and Bing.',
+          'Diagnosed and resolved cross-browser bugs, layout inconsistencies, and design issues.',
+          'Optimized site performance to improve Google Lighthouse Core Web Vitals and built semantic markup for indexing on Google and Bing.',
         ],
       },
     ],
@@ -74,27 +75,36 @@ export const experience = [
 ]
 
 export const skills = [
-  { group: 'Languages', items: ['HTML', 'CSS', 'Sass', 'JavaScript', 'TypeScript', 'PHP', 'MySQL'] },
+  { group: 'Languages', items: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'] },
   {
     group: 'Frameworks & CMS',
-    items: ['React', 'Vue', 'Node.js', 'Laravel', 'CakePHP', 'WordPress', 'Shopify', 'jQuery', 'Tailwind CSS', 'Bootstrap'],
+    items: ['CakePHP', 'WordPress (Divi, Elementor)', 'jQuery', 'Tailwind CSS', 'Bootstrap'],
   },
   {
     group: 'Tools',
-    items: ['Git', 'GitHub', 'Jira', 'Figma', 'Adobe XD', 'Lighthouse', 'FileZilla', 'Cursor', 'Playwright', 'VS Code'],
+    items: [
+      'Git', 'GitHub', 'Jira', 'Figma', 'Adobe XD', 'Lighthouse', 'FileZilla',
+      'VS Code', 'Cursor', 'GitHub Copilot', 'Claude', 'Playwright',
+    ],
   },
   {
     group: 'Practices',
     items: [
       'AI-assisted development',
       'Spec-driven development',
-      'AI-assisted unit tests',
+      'Prompt engineering',
+      'AI-assisted unit testing',
+      'Manual test cases',
       'REST APIs',
       'Responsive design',
       'Technical SEO',
       'Core Web Vitals',
       'Cross-browser testing',
     ],
+  },
+  {
+    group: 'Familiar with',
+    items: ['Sass/SCSS', 'TypeScript', 'React', 'Vue', 'Node.js', 'Laravel', 'WooCommerce', 'Shopify', 'Next.js'],
   },
 ]
 
@@ -107,17 +117,45 @@ export const education = {
 
 export const projects = [
   {
-    name: 'Project name',
-    status: 'In progress',
-    description: 'One or two sentences on what it does and who it is for.',
-    stack: 'React, Tailwind CSS',
-    href: '#', // live site URL
-    github: 'https://github.com/your-username/project-name',
-  }
-]
-
-// Skills with real-world production experience (shown with a gold border)
-export const realWorldSkills = [
-  'HTML', 'CSS', 'JavaScript', 'jQuery', 'PHP', 'WordPress', 'CakePHP', 'Laravel', 'MySQL', 'Node.js',
-  'Git', 'GitHub', 'Jira', 'Figma', 'Adobe XD', 'Lighthouse', 'FileZilla', 'Cursor', 'Playwright', 'VS Code', 'Tailwind CSS', 'Bootstrap'
+    company: 'Forty Degrees Celsius Inc.',
+    items: [
+      {
+        name: 'NativeCamp',
+        featured: true, // spans the full width
+        status: 'Live',
+        description:
+          'An online English-conversation platform with over a million users. I was part of the team that maintained and extended its large existing codebase, moving from front-end into full-stack work.',
+        href: 'https://nativecamp.net/',
+        // image: nativecampImg,
+      },
+      {
+        name: 'Textbook pages',
+        status: 'Live',
+        description:
+          "Static textbook pages in NativeCamp's lesson library. Most of our team's work revolves around them, and I modify and update the pages.",
+        href: 'https://nativecamp.net/textbook',
+      },
+      {
+        name: 'Study Abroad',
+        status: 'Live',
+        description:
+          "NativeCamp's study-abroad service pages. I was part of the front-end development, including the sub-pages, built before our AI-assisted workflow.",
+        href: 'https://nativecamp.net/study_abroad',
+      },
+    ],
+  },
+  {
+    company: 'Proweaver Inc.',
+    items: [
+      {
+        name: 'Client websites',
+        featured: true,
+        status: 'Live',
+        description:
+          "Proweaver's showcase of client work. I was assigned across many client sites wherever a build or maintenance was needed, working on responsive custom WordPress sites in Divi and Elementor.",
+        stack: ['WordPress', 'Divi', 'Elementor'],
+        href: 'https://www.proweaver.com/our-work',
+      },
+    ],
+  },
 ]

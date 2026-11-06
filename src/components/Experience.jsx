@@ -26,11 +26,13 @@ function AccordionItem({ job, id, open, onToggle }) {
           aria-expanded={open}
           aria-controls={`${id}-panel`}
           id={`${id}-button`}
-          className="flex w-full cursor-pointer items-start justify-between gap-4 py-5 text-left"
+          className="group -mx-3 flex w-[calc(100%+1.5rem)] cursor-pointer items-start justify-between gap-4 rounded-lg px-3 py-5 text-left transition-colors duration-200 hover:bg-zinc-50 dark:hover:bg-zinc-900"
         >
           <span>
             <span className="flex flex-wrap items-center gap-x-3 gap-y-1">
-              <span className="text-lg font-semibold text-zinc-900 dark:text-zinc-50">{job.company}</span>
+              <span className="text-lg font-semibold text-zinc-900 transition-colors group-hover:text-sky-700 dark:text-zinc-50 dark:group-hover:text-sky-300">
+                {job.company}
+              </span>
               <Badge current={job.status === 'Recent'}>{job.status}</Badge>
             </span>
             <span className="mt-1 block text-sm font-normal text-zinc-600 dark:text-zinc-400">

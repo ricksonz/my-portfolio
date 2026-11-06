@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section id="top" className="hero-in mt-12">
       <div className="grid size-16 place-items-center rounded-full bg-zinc-900 text-lg font-semibold text-white dark:bg-zinc-50 dark:text-zinc-900">
-        <img src={profile.image} alt={profile.name} className="size-16 rounded-full" />
+        <img src={profile.image} alt={profile.name} className="size-16 rounded-full object-contain" />
       </div>
       <h1 className="mt-6 text-3xl font-semibold tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">
         Hey, I'm {profile.firstName}!
@@ -39,8 +39,8 @@ export default function Hero() {
 
       {/* Tertiary: neutral outline */}
       <a
-        href="/resume.pdf"
-        download
+        href="https://docs.google.com/document/d/1M5sElFSM9GDN-VVshuYQElkhPvuaynKSQCKZpwxH4Fw/edit?usp=sharing"
+        target="_blank"
         className={`${button} border border-zinc-300 text-zinc-900 hover:bg-zinc-100 dark:border-zinc-700 dark:text-zinc-50 dark:hover:bg-zinc-800`}
       >
         <DownloadIcon />
